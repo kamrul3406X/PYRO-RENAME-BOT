@@ -36,10 +36,10 @@ class Config(object):
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
+    START_PIC   = os.environ.get("https://i.ibb.co/1v8YKtQ/IMG-20230520-120224-860.jpg", "")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
+    FORCE_SUB   = os.environ.get("KHCLOUDFILE", "") 
+    LOG_CHANNEL = int(os.environ.get("https://i.ibb.co/1v8YKtQ/IMG-20230520-120224-860.jpg", None))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
